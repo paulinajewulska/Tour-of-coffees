@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+}
+
+.header__nav__item {
+    padding: 0.5rem;
+}
+.header__nav__item:first-child {
+    margin-left: auto;
+}
+
+a:visited, a:hover {
+  color: #000;
+}
+
+.is-active {
+    font-weight: bold;
+}

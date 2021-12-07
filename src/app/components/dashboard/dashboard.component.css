@@ -1,0 +1,35 @@
+.dashboard {
+  border-bottom: 2px solid #000;
+}
+
+.dashboard__title {
+  margin-bottom: 0;
+}
+
+.dashboard__menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dashboard__menu__item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  word-break: break-all; 
+}
+
+a, a:visited, a:hover {
+  color: #000;
+}
+
+.dashboard__menu__item__title {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 780px) {
+  .dashboard__menu__item {
+    width: 25%;
+  }
+}

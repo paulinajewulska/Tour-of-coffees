@@ -1,0 +1,12 @@
+<div class="coffee-details" *ngIf="coffee">
+  <h2 class="coffee-details__title">{{coffee.name | uppercase}}</h2>
+  <div class="coffee-details__info">
+    <div><span>id: </span>{{coffee.id}}</div>
+    <div>
+      <label for="coffee-name">Coffee name: </label>
+      <input id="coffee-name" [(ngModel)]="coffee.name" placeholder="name">
+    </div>
+  </div>
+  <button class="coffee-details__button" (click)="save()">save</button>
+  <button class="coffee-details__button" (click)="goBack()">go back</button>
+</div>

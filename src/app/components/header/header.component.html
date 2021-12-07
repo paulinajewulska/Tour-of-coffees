@@ -1,0 +1,7 @@
+<div class="header">
+    <h1>{{title | uppercase}}</h1>
+    <nav class="header__nav">
+        <a class="header__nav__item" routerLink="/dashboard" [routerLinkActive]="['is-active']">{{dashboard}}</a>
+        <a class="header__nav__item" routerLink="/coffees" [routerLinkActive]="['is-active']">{{coffees}}</a>
+    </nav>
+</div>

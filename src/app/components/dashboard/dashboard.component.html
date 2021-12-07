@@ -1,0 +1,12 @@
+<div class="dashboard">
+  <h2 class="dashboard__title">{{topCoffees | uppercase}}</h2>
+  <div class="dashboard__menu">
+    <div class="dashboard__menu__item" *ngFor="let coffee of coffees; index as i">
+      <h3 class="dashboard__menu__item__title">0{{i + 1}}</h3>
+      <a routerLink="/detail/{{coffee.id}}">
+        {{coffee.name}}
+      </a>
+    </div>
+  </div>
+  <app-coffee-search></app-coffee-search>
+</div>

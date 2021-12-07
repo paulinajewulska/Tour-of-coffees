@@ -1,0 +1,18 @@
+<div class="coffees">
+  <div class="coffees__add">
+    <h2>{{addCoffee | uppercase}}</h2>
+    <label for="new-coffee" class="coffees__add__label">{{coffeeNameLabel}}</label>
+    <input id="new-coffee" #coffeeName />
+    <button class="coffees__button" (click)="add(coffeeName.value); coffeeName.value=''">
+      {{addCoffee}}
+    </button>
+  </div>
+  <h2>{{myCoffees | uppercase}}</h2>
+  <ul class="coffees__list">
+    <li class="coffees__list__item" *ngFor="let coffee of coffees">
+      <h3 class="coffees__list__item__title">{{coffee.id}}</h3>
+      <a routerLink="/detail/{{coffee.id}}">{{coffee.name}}
+      </a>
+    </li>
+  </ul>
+</div>

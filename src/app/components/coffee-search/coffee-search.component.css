@@ -1,0 +1,17 @@
+.coffee__search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 2px solid #000;
+}
+
+.coffee__search__label {
+    margin-right: 1rem;
+}
+
+.search__result {
+    margin-top: 0;
+    list-style-type: square;
+}

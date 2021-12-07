@@ -1,0 +1,17 @@
+.messages__header {
+    display: flex;
+    align-items: center;
+}
+
+.messages__title {
+    width: 50%;
+}
+
+.messages__button {
+    height: 2.5rem;
+    margin: 0 0.5rem 0 auto;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
